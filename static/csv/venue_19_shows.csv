@@ -1,0 +1,23 @@
+,,Venue Summary
+Name:,Heer Palace
+Place:,Kanpur
+Capacity:,1000
+Show Data,ID,45
+,Name,Barbie
+,admin rating,4
+,Tags,"pink,doll,fiction"
+,Price,300
+,Date,2023-07-18
+,Date,12:00 to 14:30
+,Booked,202
+,User rating,4.5
+Show Data,ID,46
+,Name,Into The Spiderverse
+,admin rating,4
+,Tags,"Spiderman,thrilling,action"
+,Price,150
+,Date,2023-07-18
+,Date,00:00 to 00:00
+,Booked,9
+,User rating,3.3333333333333335
+Total Revenue,->,61950
