@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report</title>
+</head>
+<body>
+
+    <header>
+        <h1>Monthly Report for {{ user.name }}</h1>
+        <p>Date: {{ date.strftime('%Y-%m-%d') }}</p>
+        <img src="static/images/thankyou.png" alt="Thank You!">
+    </header>
+
+    <section>
+        <h2>Rated Shows</h2>
+        <ul>
+            {% for show in rated_shows %}
+                <li>{{ show.name }} (Date: {{ show.date }}, Rating: {{ show.rating }})</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section>
+        <h2>Booked Shows</h2>
+        <ul>
+            {% for show in booked_shows %}
+                <li>{{ show.show.name }} (Date: {{ show.show.date }}, Seats Booked: {{ show.seats }})</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <footer>
+        <p>Thank you for being a valued user!</p>
+    </footer>
+</body>
+</html>
